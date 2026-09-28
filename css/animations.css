@@ -1,0 +1,101 @@
+.fade-in {
+  animation: fadeIn 2500ms ease both;
+}
+
+/* .slide-right {
+    animation: slideRight 1000ms ease both;
+}
+
+.slide-left {
+    animation: slideLeft 1000ms ease both;
+} */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* @keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+/* -------------------------
+   SCROLL ANIMATION
+------------------------- */
+
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.scroll-animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Animation types */
+
+.scroll-animate.fade-up {
+    transform: translateY(40px);
+}
+
+.scroll-animate.fade-down {
+    transform: translateY(-40px);
+}
+
+.scroll-animate.slide-left {
+    transform: translateX(-60px);
+}
+
+.scroll-animate.slide-right {
+    transform: translateX(60px);
+}
+
+.scroll-animate.fade-in {
+    transform: none;
+}
+
+
+/* Visible */
+
+.scroll-animate.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.hover-effect {
+    transition:
+        transform 0.5s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); */
+}

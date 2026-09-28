@@ -1,0 +1,41 @@
+.rsvp-page { text-align: center; }
+.rsvp-header { max-width: 650px; margin: 0 auto 30px; }
+.rsvp-card {
+  max-width: 720px;
+  margin: auto;
+  padding: clamp(24px, 5vw, 50px);
+  text-align: left;
+}
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.field { display: grid; gap: 8px; }
+.field--full { grid-column: 1 / -1; }
+.field label { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; }
+.field input, .field select, .field textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 13px 14px;
+  color: var(--ink);
+  background: rgba(255,255,255,.35);
+  outline: none;
+}
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--rose); box-shadow: 0 0 0 3px rgba(201,142,155,.12); }
+.field textarea { min-height: 120px; resize: vertical; }
+.attendance { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.attendance label {
+  position: relative;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--muted);
+}
+.attendance input { position: absolute; opacity: 0; }
+.attendance label:has(input:checked) { border-color: var(--rose); color: var(--rose-dark); background: rgba(201,142,155,.07); }
+.form-actions { margin-top: 24px; display: flex; justify-content: flex-end; }
+.form-note { margin-top: 12px; color: var(--muted); font-size: 11px; }
+@media (max-width: 620px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .field--full { grid-column: auto; }
+  .attendance { grid-template-columns: 1fr; }
+}
