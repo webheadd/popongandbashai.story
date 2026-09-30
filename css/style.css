@@ -4,9 +4,10 @@
   --ink: #4b4050;
   --muted: #7f7180;
   --rose: #c98e9b;
-  --rose-dark: #9c6573;
+  --green-dark: #5f6b46;
   --lavender: #b8a6c9;
-  --blue: #a9bfd0;
+  --blue: #698cb5;
+  --light-blue: #eef2fa;
   --sage: #aebda8;
   --gold: #b7985a;
   --line: rgba(102, 78, 79, .2);
@@ -15,6 +16,9 @@
   --sans: "DM Sans", Arial, sans-serif;
   --font-seasons: 'Seasons', serif;
   --font-perfumerie: 'Perfumerie', sans-serif;
+  --font-new-icon: 'New Icon', sans-serif;
+  --font-hello-paris: 'Hello Paris Serif Regular', serif;
+  --font-monotype-corsiva: 'Monotype Corsiva Regular', cursive;
 }
 
 * { box-sizing: border-box; }
@@ -29,6 +33,30 @@
   src: url('/assets/fonts/parfumeriescriptoldstyle.otf') format('opentype');
   font-display: swap;
 }
+@font-face {
+  font-family: 'New Icon';
+  src: url('/assets/fonts/new-icon.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Monotype Corsiva Regular';
+  src: url('/assets/fonts/monotype-corsiva-regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hello Paris Serif Regular";
+  src: url("https://db.onlinewebfonts.com/t/af9dbbacda3360d434dcce8ab8b6c38f.eot");
+  src: url("https://db.onlinewebfonts.com/t/af9dbbacda3360d434dcce8ab8b6c38f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/af9dbbacda3360d434dcce8ab8b6c38f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/af9dbbacda3360d434dcce8ab8b6c38f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/af9dbbacda3360d434dcce8ab8b6c38f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/af9dbbacda3360d434dcce8ab8b6c38f.svg#Hello Paris Serif Regular")format("svg");
+  font-display: swap;
+}
+.text-center { text-align: center; }
+.font-sans { font-family: var(--sans); }
 
 .font-seasons {
   font-family: 'Seasons', serif;
@@ -36,7 +64,18 @@
 .font-perfumerie {
   font-family: 'Perfumerie', sans-serif;
 }
-
+.font-new-icon {
+  font-family: var(--font-new-icon);
+}
+.font-monotype-corsiva {
+  font-family: var(--font-monotype-corsiva);
+}
+.font-hello-paris {
+  font-family: var(--font-hello-paris);
+}
+.uppercase { text-transform: uppercase; }
+.bold { font-weight: 600; }
+.text-blue { color: var(--blue) !important; }
 
 html {
   scroll-behavior: smooth;
@@ -54,6 +93,12 @@ body {
 }
 
 button, input, select, textarea { font: inherit; }
+
+.autoplay-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 button {
   color: inherit;
@@ -74,6 +119,20 @@ button {
     radial-gradient(circle at 88% 18%, rgba(184,166,201,.18), transparent 27%),
     radial-gradient(circle at 50% 100%, rgba(169,191,208,.16), transparent 32%),
     var(--cream);
+}
+.site-background::before {
+  position: absolute;
+  inset: -1px;
+  background: url("/assets/imgs/background.png") repeat;
+  content: "";
+  background-size: 160px 160px;
+  pointer-events: none;
+}
+
+.site-background::before {
+  opacity: .3;
+  mix-blend-mode: multiply;
+  transform: translate(1px, 1px);
 }
 
 .grain {
@@ -140,7 +199,7 @@ button {
   text-transform: uppercase;
 }
 .main-nav button:hover,
-.main-nav button.active { color: var(--rose-dark); }
+.main-nav button.active { color: var(--green-dark); }
 
 .menu-toggle { display: none; border: 0; background: transparent; }
 
@@ -207,7 +266,7 @@ h3 { font-size: clamp(28px, 4vw, 42px); }
   border: 1px solid var(--rose);
   border-radius: 999px;
   background: transparent;
-  color: var(--rose-dark);
+  color: var(--green-dark);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: .15em;
@@ -272,7 +331,7 @@ h3 { font-size: clamp(28px, 4vw, 42px); }
 }
 
 @media (max-width: 760px) {
-  .site-shell { padding: 0 16px; }
+  /* .site-shell { padding: 0 16px; } */
   .topbar { min-height: 68px; }
   .main-nav {
     position: absolute;

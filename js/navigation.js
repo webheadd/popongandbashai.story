@@ -4,6 +4,7 @@ import { renderStory } from "./pages/story.js";
 import { renderDetails } from "./pages/details.js";
 import { renderRSVP } from "./pages/rsvp.js";
 import { initScrollAnimations } from "./animation.js";
+import { initAutoplayVideos } from "./autoplayVideos.js";
 
 const app = document.querySelector("#app");
 let currentPage = null;
@@ -26,6 +27,9 @@ export function navigateTo(page) {
   const render = pages[page];
   app.innerHTML = "";
   render(app);
+  initAutoplayVideos(app);
+  app.scrollTo({ top: 0, behavior: "instant" });
+  window.scrollTo(0, 0);
   currentPage = page;
   console.log(`Navigated to ${page}`);
   document.addEventListener("DOMContentLoaded", initScrollAnimations);

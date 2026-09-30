@@ -31,7 +31,7 @@
   color: var(--muted);
 }
 .attendance input { position: absolute; opacity: 0; }
-.attendance label:has(input:checked) { border-color: var(--rose); color: var(--rose-dark); background: rgba(201,142,155,.07); }
+.attendance label:has(input:checked) { border-color: var(--rose); color: var(--green-dark); background: rgba(201,142,155,.07); }
 .form-actions { margin-top: 24px; display: flex; justify-content: flex-end; }
 .form-note { margin-top: 12px; color: var(--muted); font-size: 11px; }
 @media (max-width: 620px) {
