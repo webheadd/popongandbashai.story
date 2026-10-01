@@ -1,10 +1,15 @@
 import { playMusic } from "../music.js";
+import { createPetals } from "../petals.js";
+
+const STORY_PETAL_COUNT = 16;
 
 export function renderStory(app) {
   app.innerHTML = `
     <section class="page story-page" aria-labelledby="story-title">
+      <button class="page-back" type="button" aria-label="Go back to main page">GO BACK</button>
       <div class="page-inner">
-        <header class="story-hero">
+        <header class="story-hero petal-host">
+          <div class="petal-layer" aria-hidden="true"></div>
           <div class="story-ornament scroll-animate fade-up" aria-hidden="true">❦</div>
           <p class="story-hero__eyebrow scroll-animate fade-up">A celebration of us</p>
           <h1 class="story-hero__title scroll-animate fade-up" id="story-title">Our Story</h1>
@@ -13,7 +18,7 @@ export function renderStory(app) {
 
         <section class="story-chapter story-chapter--first" aria-labelledby="how-we-met-title">
           <div class="story-chapter__text">
-            <h3 class="scroll-animate fade-up uppercase" id="how-we-met-title">How We Met</h3>
+            <h3 class="scroll-animate fade-up uppercase text-center" id="how-we-met-title">How We Met</h3>
             <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true">❦</div>
             <p class="story-description scroll-animate fade-up">
               The couple met during their college internship at Convergys in Eton, Centris QC.
@@ -36,8 +41,7 @@ export function renderStory(app) {
 
         <section class="story-chapter story-chapter--proposal" aria-labelledby="proposal-title">
           <div class="story-chapter__text">
-            <p class="story-chapter__number scroll-animate fade-up">Chapter 02</p>
-            <h2 class="scroll-animate fade-up" id="proposal-title">The Proposal</h2>
+            <h2 class="scroll-animate fade-up uppercase" id="proposal-title">The Proposal</h2>
             <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true">❖</div>
             <div class="story-collage" role="group" aria-label="Proposal photo collage">
               <button class="scroll-animate fade-up story-polaroid story-polaroid--featured" type="button" data-story-lightbox aria-label="Enlarge proposal photo 1">
@@ -84,12 +88,17 @@ export function renderStory(app) {
           <p class="story-watch scroll-animate fade-up">Watch Our Story</p>
         </section>
       </div>
+      <footer class="main-footer">
+        <button class="main-footer__button" type="button">View Details</button>
+      </footer>
       <dialog class="story-lightbox" aria-label="Enlarged proposal photo">
         <button class="story-lightbox__close" type="button" aria-label="Close enlarged photo">×</button>
         <div class="story-lightbox__content"></div>
       </dialog>
     </section>
   `;
+
+  createPetals(app.querySelector(".petal-layer"), STORY_PETAL_COUNT);
 
   const lightbox = app.querySelector(".story-lightbox");
   const lightboxContent = lightbox.querySelector(".story-lightbox__content");
@@ -105,6 +114,14 @@ export function renderStory(app) {
       lightboxContent.replaceChildren(enlargedPhoto);
       lightbox.showModal();
     });
+  });
+
+  app.querySelector(".main-footer__button").addEventListener("click", () => {
+    window.app.navigateTo("details");
+  });
+
+  app.querySelector(".page-back").addEventListener("click", () => {
+    window.app.navigateTo("main");
   });
 
   lightbox.querySelector(".story-lightbox__close").addEventListener("click", () => {

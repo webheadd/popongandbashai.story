@@ -2,41 +2,48 @@
   animation: fadeIn 2500ms ease both;
 }
 
-/* .slide-right {
-    animation: slideRight 1000ms ease both;
-}
-
-.slide-left {
-    animation: slideLeft 1000ms ease both;
-} */
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* @keyframes slideRight {
-    from {
-        opacity: 0;
-        transform: translateX(-40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.petal-host {
+    position: relative;
+    isolation: isolate;
 }
-@keyframes slideLeft {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-} */
+.petal-layer {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.petal {
+    position: absolute;
+    bottom: -24px;
+    left: var(--petal-left);
+    width: var(--petal-size);
+    height: var(--petal-height);
+    border-radius: 85% 0 85% 0;
+    background: linear-gradient(145deg, rgba(255,239,243,.92), rgba(222,151,171,.78));
+    box-shadow: 0 1px 5px rgba(36,32,39,.16);
+    opacity: 0;
+    animation: petal-rise var(--petal-duration) linear var(--petal-delay) infinite;
+    will-change: transform, opacity;
+}
+
+@keyframes petal-rise {
+    0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+    10% { opacity: .78; }
+    68% { opacity: .62; }
+    100% { transform: translate3d(var(--petal-drift), -420px, 0) rotate(var(--petal-turn)); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .petal { display: none; }
+}
 
 /* -------------------------
    SCROLL ANIMATION
@@ -46,8 +53,8 @@
     opacity: 0;
     transform: translateY(40px);
     transition:
-        opacity 0.8s ease,
-        transform 0.8s ease;
+        opacity 1.5s ease,
+        transform 1.5s ease;
 }
 
 .scroll-animate.show {
@@ -92,7 +99,7 @@
 
 .hover-effect {
     transition:
-        transform 0.5s ease;
+        transform 1s ease;
 }
 
 .hover-effect:hover {

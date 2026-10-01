@@ -1,17 +1,20 @@
-.story-page { text-align: center; }
+.story-page { text-align: center; padding-bottom: 0; }
 
 .story-hero {
   position: relative;
   display: flex;
-  min-height: 320px;
+  height: 100vh;
   margin: -56px 0 0;
-  padding: 54px 24px 92px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(160deg, #f4e9ee, #e7eaf5 62%, var(--paper));
-  clip-path: ellipse(82% 100% at 50% 0);
+  background-color: var(--green-dark);
+  background-image:
+    linear-gradient(180deg, rgba(36,32,39,.12), rgba(36,32,39,.54)),
+    url("../assets/imgs/couple_banner.png");
+  background-position: center, center 46%;
+  background-size: cover;
 }
 .story-hero__eyebrow,
 .story-chapter__number,
@@ -22,13 +25,18 @@
   letter-spacing: .18em;
   text-transform: uppercase;
 }
-.story-hero__eyebrow { margin: 6px 0 12px; }
+.story-hero__eyebrow {
+  margin: 6px 0 12px;
+  color: rgba(255,255,255,.88);
+  text-shadow: 0 1px 8px rgba(0,0,0,.35);
+}
 .story-hero__title {
   margin: 0;
-  color: var(--green-dark);
+  color: #fff;
   font-family: var(--font-seasons);
   font-size: clamp(38px, 6vw, 64px);
   line-height: 1.1;
+  text-shadow: 0 2px 14px rgba(0,0,0,.42);
   text-transform: uppercase;
 }
 .story-hero__tagline {
@@ -308,7 +316,11 @@
 .story-watch::after { width: 38px; height: 1px; background: var(--gold); content: ""; }
 
 @media (max-width: 760px) {
-  .story-hero { margin-top: -38px; }
+  .story-hero {
+    min-height: 380px;
+    clip-path: ellipse(100% 100% at 50% 0);
+  }
+  
 }
 
 @media (min-width: 700px) {
@@ -316,7 +328,7 @@
 }
 
 @media (max-width: 620px) {
-  .story-hero { min-height: 285px; padding: 44px 18px 78px; }
+  .story-hero { min-height: 320px; padding: 48px 18px 82px; background-position: center, 54% center; }
   .story-chapter {
     padding: 40px 24px 48px;
     grid-template-columns: minmax(0, 1fr);
@@ -337,7 +349,7 @@
 }
 
 @media (max-width: 380px) {
-  .story-hero { min-height: 260px; }
+  .story-hero { min-height: 290px; }
   .story-hero .story-flower { width: 58px; }
   .story-chapter { padding-inline: 18px; }
   .story-chapter--proposal { padding-inline: 18px; }
@@ -347,3 +359,4 @@
   .story-caption { font-size: 24px; }
   .story-watch { font-size: 10px; }
 }
+

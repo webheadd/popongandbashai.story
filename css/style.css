@@ -69,6 +69,7 @@
 }
 .font-monotype-corsiva {
   font-family: var(--font-monotype-corsiva);
+  font-size: 1.1rem;
 }
 .font-hello-paris {
   font-family: var(--font-hello-paris);
@@ -120,19 +121,31 @@ button {
     radial-gradient(circle at 50% 100%, rgba(169,191,208,.16), transparent 32%),
     var(--cream);
 }
-.site-background::before {
-  position: absolute;
-  inset: -1px;
-  background: url("/assets/imgs/background.png") repeat;
-  content: "";
-  background-size: 160px 160px;
-  pointer-events: none;
+.debossed-background-host {
+  position: relative;
+  isolation: isolate;
 }
-
-.site-background::before {
+.site-background.debossed-background-host { position: fixed; }
+.debossed-background {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: url("/assets/imgs/background.png") repeat;
+  background-size: 160px 160px;
   opacity: .3;
   mix-blend-mode: multiply;
   transform: translate(1px, 1px);
+  pointer-events: none;
+}
+.embossed-background {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: url("/assets/imgs/background_embossed.png") no-repeat center;
+  background-size: cover;
+  opacity: .15;
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 .grain {
@@ -157,6 +170,7 @@ button {
 .ornament--two { right: -14%; bottom: -25%; transform: rotate(-35deg); }
 
 .site-shell {
+  position: relative;
   width: 100%;
   height: 100dvh;
   min-height: 100vh;
@@ -217,7 +231,7 @@ button {
 .page {
   width: 100%;
   min-height: 100%;
-  padding: 56px 0 100px;
+  /* padding: 56px 0 100px; */
   animation: pageIn .55s ease both;
 }
 
@@ -348,7 +362,7 @@ h3 { font-size: clamp(28px, 4vw, 42px); }
   .main-nav.open { display: flex; }
   .main-nav button { text-align: left; padding: 13px; }
   .menu-toggle { display: block; }
-  .page { padding-top: 38px; }
+  /* .page { padding-top: 38px; } */
   .music-player { right: 12px; bottom: 12px; grid-template-columns: 40px 1fr 65px; }
   .music-toggle { width: 40px; height: 40px; }
 }

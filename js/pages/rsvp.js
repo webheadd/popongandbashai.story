@@ -1,6 +1,7 @@
 export function renderRSVP(app) {
   app.innerHTML = `
     <section class="page rsvp-page" aria-labelledby="rsvp-title">
+      <button class="page-back" type="button" aria-label="Go back to main page">GO BACK</button>
       <div class="page-inner">
         <div class="rsvp-header">
           <p class="eyebrow">We hope you can join us</p>
@@ -10,66 +11,37 @@ export function renderRSVP(app) {
           </p>
         </div>
 
-        <form id="rsvpForm" class="rsvp-card ornate-card" novalidate>
-          <div class="form-grid">
-            <div class="field field--full">
-              <label for="guestName">Your name</label>
-              <input id="guestName" name="guestName" autocomplete="name" required placeholder="Full name">
-            </div>
-
-            <div class="field field--full">
-              <label>Will you attend?</label>
-              <div class="attendance">
-                <label><input type="radio" name="attendance" value="accept" required> Joyfully accept</label>
-                <label><input type="radio" name="attendance" value="decline"> Regretfully decline</label>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="guests">Number of guests</label>
-              <select id="guests" name="guests">
-                <option value="1">1 guest</option>
-                <option value="2">2 guests</option>
-                <option value="3">3 guests</option>
-                <option value="4">4 guests</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="meal">Meal preference</label>
-              <select id="meal" name="meal">
-                <option value="">Select one</option>
-                <option>Regular</option>
-                <option>Vegetarian</option>
-                <option>Other dietary requirement</option>
-              </select>
-            </div>
-
-            <div class="field field--full">
-              <label for="message">A little message</label>
-              <textarea id="message" name="message" placeholder="Leave a note for the couple..."></textarea>
-            </div>
-          </div>
-
-          <div class="form-actions">
-            <button class="btn btn--solid" type="submit">Send RSVP</button>
-          </div>
-          <p class="form-note">Demo mode: connect this form to your preferred RSVP service before launch.</p>
-        </form>
+        <div class="rsvp-card">
+          <div style="position: relative; width: 100%; height: 0; padding-top: 177.8305%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAHWgDJ9elo/jZX3N0Q9xf2mwDwbHC7bkw/view?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAHWgDJ9elo&#x2F;jZX3N0Q9xf2mwDwbHC7bkw&#x2F;view?utm_content=DAHWgDJ9elo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+        </div>
       </div>
     </section>
   `;
 
-  document.querySelector("#rsvpForm").addEventListener("submit", (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
-
-    window.app.showToast("Thank you! Your RSVP has been recorded in demo mode.");
-    form.reset();
+  app.querySelector(".page-back").addEventListener("click", () => {
+    window.app.navigateTo("main");
   });
+
+  const rsvpForm = document.querySelector("#rsvpForm");
+  if (rsvpForm) {
+    rsvpForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      window.app.showToast("Thank you! Your RSVP has been recorded in demo mode.");
+      form.reset();
+    });
+  }
 }
