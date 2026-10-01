@@ -10,16 +10,14 @@ export function renderStory(app) {
       <div class="page-inner">
         <header class="story-hero petal-host">
           <div class="petal-layer" aria-hidden="true"></div>
-          <div class="story-ornament scroll-animate fade-up" aria-hidden="true">❦</div>
           <p class="story-hero__eyebrow scroll-animate fade-up">A celebration of us</p>
           <h1 class="story-hero__title scroll-animate fade-up" id="story-title">Our Story</h1>
-          <div class="story-ornament story-ornament--small scroll-animate fade-up" aria-hidden="true">❖</div>
         </header>
 
         <section class="story-chapter story-chapter--first" aria-labelledby="how-we-met-title">
           <div class="story-chapter__text">
             <h3 class="scroll-animate fade-up uppercase text-center" id="how-we-met-title">How We Met</h3>
-            <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true">❦</div>
+            <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
             <p class="story-description scroll-animate fade-up">
               The couple met during their college internship at Convergys in Eton, Centris QC.
               <br><br>
@@ -37,12 +35,12 @@ export function renderStory(app) {
           </figure>
         </section>
 
-        <div class="story-divider" aria-hidden="true"><span>❦</span></div>
+        <div class="story-divider" aria-hidden="true"><span><img src="assets/imgs/logo.svg" alt=""></span></div>
 
         <section class="story-chapter story-chapter--proposal" aria-labelledby="proposal-title">
           <div class="story-chapter__text">
             <h2 class="scroll-animate fade-up uppercase" id="proposal-title">The Proposal</h2>
-            <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true">❖</div>
+            <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
             <div class="story-collage" role="group" aria-label="Proposal photo collage">
               <button class="scroll-animate fade-up story-polaroid story-polaroid--featured" type="button" data-story-lightbox aria-label="Enlarge proposal photo 1">
                 <span class="story-seal" aria-hidden="true"></span>
@@ -68,16 +66,15 @@ export function renderStory(app) {
               <br><br>
               Surrounded by golden leaves, the majestic Mt. Fuji stood in the background as a witness to one of life's most cherished moments. Among the vibrant colors of autumn, a heartfelt promise was made, a joyful "Yes" was shared, and a new chapter of forever began.
             </p>
-            <p class="story-caption scroll-animate fade-up">Forever begins here</p>
           </div>
         </section>
 
-        <div class="story-divider story-divider--last" aria-hidden="true"><span>♥</span></div>
+        <div class="story-divider story-divider--last" aria-hidden="true"><span><img src="assets/imgs/logo.svg" alt=""></span></div>
 
         <section class="story-years" aria-labelledby="years-title">
           <p class="story-chapter__number scroll-animate fade-up">Chapter 03</p>
           <h2 class="scroll-animate fade-up" id="years-title">11 Years Strong</h2>
-          <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true">❖</div>
+          <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
           <p class="story-subtitle scroll-animate fade-up">A glimpse into our 11-year journey before we finally say 'I do.'</p>
           <div class="story-video">
             <video class="autoplay-video scroll-animate fade-up" controls playsinline loop preload="metadata" aria-label="Our 11 years together">

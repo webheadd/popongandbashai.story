@@ -157,14 +157,15 @@
   gap: 9px;
   margin: 0;
   padding: 0 13px;
-  border: 1px solid rgba(183, 152, 90, .72);
+  border: none;
   border-radius: 0;
-  background: rgba(255, 250, 240, .94);
+  background: none;
   color: var(--green-dark);
   font-size: 10px;
   letter-spacing: .14em;
   line-height: 1;
   text-transform: uppercase;
+  box-shadow: 0 2px 4px 0 rgba(63,69,81,.16);
   transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease, opacity .2s ease;
 }
 
@@ -183,11 +184,7 @@
   transform: translateY(calc(-100% - 12px));
 }
 
-.page-back::before {
-  content: "\2190";
-  font-size: 16px;
-  line-height: 1;
-}
+
 
 .page-back:hover,
 .page-back:focus-visible {

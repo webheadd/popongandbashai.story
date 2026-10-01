@@ -4,7 +4,6 @@
   position: relative;
   display: flex;
   height: 100vh;
-  margin: -56px 0 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -66,6 +65,13 @@
   content: "";
 }
 .story-ornament--rule::after { transform: scaleX(-1); }
+.story-ornament--rule img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  opacity: .78;
+}
 
 .story-chapter {
   position: relative;
@@ -277,7 +283,8 @@
   background: var(--line);
   content: "";
 }
-.story-divider span { position: relative; padding: 0 12px; background: var(--cream); }
+.story-divider span { position: relative; display: grid; width: 48px; height: 32px; padding: 0 10px; place-items: center; background: var(--cream); }
+.story-divider span img { display: block; width: 26px; height: 26px; object-fit: contain; opacity: .78; }
 .story-divider--last span { background: var(--paper); }
 
 .story-years {
