@@ -91,6 +91,82 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
             </article>
           </div>
         </section>
+
+        <section class="details-section entourage-section" aria-labelledby="entourage-title">
+          <header class="details-section__header">
+            <h2 id="entourage-title" class="font-new-icon scroll-animate slide-left">The Entourage</h2>
+          </header>
+          <div class="entourage-couple scroll-animate fade-up">
+            <p><span class="entourage-subtitle">The Bride</span><strong>Shai La
+            <br>M. Tria</strong></p>
+            <p><span class="entourage-subtitle">The Groom</span><strong>Rodolfo C.<br>
+            Sta. Maria <span style="font-family: var(--serif);font-style: italic;font-size: 40px;vertical-align: middle;margin-left: -10px;">III</span></strong></p>
+          </div>
+
+          <section class="entourage-group" aria-labelledby="parents-title">
+            <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
+            <div class="entourage-grid entourage-grid--separated">
+              <article class="entourage-card">
+                <h4 class="scroll-animate">Parents of the Bride</h4>
+                <p class="scroll-animate">Mr. Wilfredo Tria</p>
+                <p class="scroll-animate">Mrs. Daisy Tria</p>
+              </article>
+              <span class="entourage-separator" aria-hidden="true"></span>
+              <article class="entourage-card">
+                <h4 class="scroll-animate">Parents of the Groom</h4>
+                <p class="scroll-animate">Mr. Rodolfo Sta. Maria Jr.</p>
+                <p class="scroll-animate">Mrs. Marita Sta. Maria</p>
+              </article>
+            </div>
+          </section>
+          <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
+          <section class="entourage-group" aria-labelledby="sponsors-title">
+            <h3 id="sponsors-title" class="font-new-icon scroll-animate slide-left">Principal Sponsors</h3>
+            <p class="font-monotype-corsiva">To stand as principal witnesses to our vows.</p>
+            <div class="entourage-grid entourage-grid--sponsors">
+              <article class="entourage-card">
+                <h4>Ninang</h4>
+                <ul>
+                  <li>Mrs. Helie Cervano</li>
+                  <li>Mrs. Mary Ann Canare</li>
+                  <li>Ms. Asuncion Ayson</li>
+                  <li>Mrs. Maricon Santos</li>
+                  <li>Mrs. Carmencita Doctolero</li>
+                  <li>Mrs. Vilma Sta Maria</li>
+                  <li>Mrs. Ana Maria De Castro</li>
+                  <li>Mrs. Annabelle Estrella</li>
+                </ul>
+              </article>
+              <article class="entourage-card">
+                <h4>Ninong</h4>
+                <ul>
+                  <li>Mr. William Cervano</li>
+                  <li>Engr. Molave Art Canare</li>
+                  <li>Vice Mayor Rommel Del Rosario</li>
+                  <li>Mr. Roseller Santos</li>
+                  <li>Mr. Joey Doctolero</li>
+                  <li>Mr. Rico Sta Maria</li>
+                  <li>Mr. Galileo Zamora</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="entourage-group" aria-label="Wedding attendants">
+            <p class="font-monotype-corsiva">To assist us with our needs.</p>
+            <div class="entourage-grid entourage-grid--separated">
+              <article class="entourage-card">
+                <h4 class="scroll-animate">Maid of Honor</h4>
+                <p class="scroll-animate">Ms. Sheena Lee Tria</p>
+              </article>
+              <span class="entourage-separator" aria-hidden="true"></span>
+              <article class="entourage-card">
+                <h4 class="scroll-animate">Best Man</h4>
+                <p class="scroll-animate">Mr. Sherwin Lloyd Tria</p>
+              </article>
+            </div>
+          </section>
+        </section>
       </div>
       <div class="division-light-blue">
         <section class="details-section timeline-section" aria-labelledby="timeline-title">

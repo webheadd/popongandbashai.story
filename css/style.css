@@ -19,6 +19,7 @@
   --font-new-icon: 'New Icon', sans-serif;
   --font-hello-paris: 'Hello Paris Serif Regular', serif;
   --font-monotype-corsiva: 'Monotype Corsiva Regular', cursive;
+  --font-hello-bride: 'Hello Bride', cursive;
 }
 
 * { box-sizing: border-box; }
@@ -55,9 +56,17 @@
     url("https://db.onlinewebfonts.com/t/af9dbbacda3360d434dcce8ab8b6c38f.svg#Hello Paris Serif Regular")format("svg");
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Hello Bride';
+  src: url('/assets/fonts/hello-bride.ttf') format('truetype');
+  font-display: swap;
+}
 .text-center { text-align: center; }
 .font-sans { font-family: var(--sans); }
-
+.font-hello-bride {
+  font-family: 'Hello Bride', cursive;
+}
 .font-seasons {
   font-family: 'Seasons', serif;
 }
