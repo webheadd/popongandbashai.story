@@ -98,12 +98,11 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 100dvh;
+  height: 100dvh;
   color: var(--ink);
   background: var(--cream);
   font-family: var(--sans);
   overflow: hidden;
-  padding-bottom: env(safe-area-inset-bottom, 20px)
 }
 
 button, input, select, textarea { font: inherit; }
