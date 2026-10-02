@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="An elegant interactive wedding invitation.">
-  <title>S & R — Our Wedding</title>
+  <title>S+P Wedding</title>
+  <link rel="icon" type="image/x-icon" href="/assets/imgs/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -29,8 +30,9 @@
     <main id="app" tabindex="-1"></main>
 
     <div id="musicPlayer" class="music-player" aria-label="Background music player">
+      <button id="scrollToTop" class="scroll-to-top" type="button" aria-label="Scroll to top" title="Scroll to top"></button>
       <button id="musicToggle" class="music-toggle" aria-label="Play music" aria-pressed="false">
-        <span class="music-icon">♫</span>
+        <span class="music-icon" aria-hidden="true"></span>
       </button>
       <audio id="backgroundMusic" loop preload="metadata">
         <source src="assets/music/wedding-song.mp3" type="audio/mpeg">

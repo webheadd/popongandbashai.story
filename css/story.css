@@ -321,6 +321,31 @@
 .story-watch { display: flex; margin: 28px 0 0; align-items: center; justify-content: center; gap: 12px; }
 .story-watch::before,
 .story-watch::after { width: 38px; height: 1px; background: var(--gold); content: ""; }
+.story-chopper {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  padding-bottom: 20px;
+  /* border-top: 1px solid var(--line); */
+  /* background: rgba(255, 250, 240, .45); */
+  text-align: center;
+  transform: translateX(-50%);
+}
+.story-chopper__video {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  /* border: 8px solid #fff; */
+  /* background: #29252a; */
+  /* box-shadow: var(--shadow); */
+}
+.story-chopper__caption {
+  max-width: 720px;
+  margin: 20px auto 0;
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1.55;
+}
 
 @media (max-width: 760px) {
   .story-hero {
@@ -351,8 +376,10 @@
   .story-polaroid { padding: 5px 5px 16px; }
   .story-polaroid--featured { padding: 7px 7px 22px; }
   .story-lightbox { padding: 54px 12px 12px; }
-  .story-years { padding: 52px 18px 68px; }
+  .story-years { padding: 0; }
   .story-subtitle { font-size: 20px; }
+  .story-chopper { padding-bottom: 56px; margin-top: 50px; }
+  .story-chopper__caption { font-size: 20px; padding: 0 10px; }
 }
 
 @media (max-width: 380px) {

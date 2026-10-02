@@ -43,10 +43,12 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
         <section class="details-section theme-section" aria-labelledby="theme-title">
           <div class="theme-section__inner">
             <h3 id="theme-title" class="font-new-icon scroll-animate slide-left">Wedding Theme</h3>
-            <p class="font-monotype-corsiva scroll-animate">
+            <p class="font-monotype-corsiva scroll-animate" style="text-align: left;">
               Dearest gentle guests, 
               <br>
+              <br>
               Inspired by the Regency era weddings and Bridgerton romance, our intimate wedding will feature a soft pastel palette drawn from hydrangeas, carnations, peonies, and spring flowers
+              <br>
               <br>
               As this is a small gathering of our nearest and dearest, we look forward to sharing this elegant day with you.
             </p>
@@ -57,7 +59,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
         <section class="details-section attire-section" aria-labelledby="attire-title">
           <header class="details-section__header">
             <h3 id="attire-title" class="font-new-icon scroll-animate slide-right">Attire Guide</h3>
-            <p style="font-size: 1.5rem;" class="font-hello-paris scroll-animate">We would love to see you dressed in formal attire to celebrate our special day with us. </p>
+            <p class="font-seasons uppercase scroll-animate">We would love to see you dressed in formal attire to celebrate our special day with us. </p>
           </header>
           <div class="attire-list">
             <article class="attire-panel">
@@ -125,28 +127,26 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
             <p class="font-monotype-corsiva">To stand as principal witnesses to our vows.</p>
             <div class="entourage-grid entourage-grid--sponsors">
               <article class="entourage-card">
-                <h4>Ninang</h4>
                 <ul>
                   <li>Mrs. Helie Cervano</li>
                   <li>Mrs. Mary Ann Canare</li>
                   <li>Ms. Asuncion Ayson</li>
                   <li>Mrs. Maricon Santos</li>
                   <li>Mrs. Carmencita Doctolero</li>
+                  <li>Mrs. Ruby Reyes</li>
                   <li>Mrs. Vilma Sta Maria</li>
-                  <li>Mrs. Ana Maria De Castro</li>
-                  <li>Mrs. Annabelle Estrella</li>
                 </ul>
               </article>
               <article class="entourage-card">
-                <h4>Ninong</h4>
                 <ul>
                   <li>Mr. William Cervano</li>
                   <li>Engr. Molave Art Canare</li>
                   <li>Vice Mayor Rommel Del Rosario</li>
                   <li>Mr. Roseller Santos</li>
                   <li>Mr. Joey Doctolero</li>
-                  <li>Mr. Rico Sta Maria</li>
-                  <li>Mr. Galileo Zamora</li>
+                  <li>Mr. Christopher Reyes</li>
+                  <li>Mrs. Ana Maria De Castro</li>
+                  <li>Mrs. Annabelle Estrella</li>
                 </ul>
               </article>
             </div>
@@ -166,8 +166,72 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
               </article>
             </div>
           </section>
+
+          <section class="entourage-group entourage-group--secondary" aria-labelledby="sponsors-title">
+            <h3 id="sponsors-title" class="font-new-icon scroll-animate slide-left">Secondary Sponsors</h3>
+            <div class="entourage-grid entourage-grid--secondary-sponsors">
+              <article class="entourage-card entourage-card--candle">
+              <img class="entourage-card__icon" src="assets/imgs/details/candle.png" alt="Candle icon">
+                <h4 class="scroll-animate">Candle</h4>
+                <ul>
+                  <li>Mr. James Nojadera</li>
+                  <li>Mrs. Edsalyn Nojadera</li>
+                </ul>
+              </article>
+              <article class="entourage-card entourage-card--cord">
+              <img class="entourage-card__icon" src="assets/imgs/details/cord.png" alt="Candle icon">
+                <h4 class="scroll-animate">Cord</h4>
+                <ul>
+                  <li>Mr. Mark Anthony Clavio</li>
+                  <li>Mrs. Geanne Marie Clavio</li>
+                </ul>
+              </article>
+              <article class="entourage-card entourage-card--veil">
+              <img class="entourage-card__icon" src="assets/imgs/details/veil.png" alt="Candle icon">
+                <h4 class="scroll-animate">Veil</h4>
+                <ul>
+                  <li>Mr. Alexis Fajardo</li>
+                  <li>Mrs. Maria Lourdes Fajardo</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+          <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
+          <section class="entourage-group entourage-group--secondary" aria-labelledby="sponsors-title">
+            <p class="font-monotype-corsiva">To carry our symbols of Love, Faith, and Treasures</p>
+            <div class="entourage-grid entourage-grid--treasures">
+              <article class="entourage-card entourage-card--ring">
+                <img class="entourage-card__icon" src="assets/imgs/details/ring.png" alt="Candle icon">
+                <h4 class="scroll-animate">Ring Bearer</h4>
+                <p>Chopper Friedrich Lionel Tria-Sta Maria</p>
+              </article>
+              <article class="entourage-card entourage-card--bible">
+                <img class="entourage-card__icon" src="assets/imgs/details/bible.png" alt="Candle icon">
+                <h4 class="scroll-animate">Bible Bearer</h4>
+                <p>Lucas Miguel Fajardo</p>
+              </article>
+              <article class="entourage-card entourage-card--coin">
+                <img class="entourage-card__icon" src="assets/imgs/details/coin.png" alt="Candle icon">
+                <h4 class="scroll-animate">Coin Bearer</h4>
+                <p>Kurt Yasher Mejares</p>
+              </article>
+              <article class="entourage-card entourage-card--flowers">
+                <img class="entourage-card__icon" src="assets/imgs/details/flowers.png" alt="Candle icon">
+                <h4 class="scroll-animate">Flower Girls</h4>
+                <ul>
+                  <li>Muffin Antoinette Jalober-Tria</li>
+                  <li>Margela Seraphine Tria</li>
+                  <li>Arabella Faith Jose</li>
+                  <li>Maria Teresa Mejares</li>
+                </ul>
+              </article>
+            </div>
+          </section>
         </section>
       </div>
+
+  
+
       <div class="division-light-blue">
         <section class="details-section timeline-section" aria-labelledby="timeline-title">
             <header class="details-section__header">
@@ -178,7 +242,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
               <div class="timeline__item scroll-animate slide-right"><img src="assets/imgs/details/ic_cocktail.png"/><strong>4:30 PM</strong><span>Cocktail hour</span></div>
               <div class="timeline__item scroll-animate slide-left"><img src="assets/imgs/details/ic_reception.png"/><strong>5:00 PM</strong><span>Reception</span></div>
               <div class="timeline__item scroll-animate slide-right"><img src="assets/imgs/details/ic_cake.png"/><strong>6:00 PM</strong><span>Cake Cutting</span></div>
-              <div class="timeline__item scroll-animate slide-left"><img src="assets/imgs/details/ic_dinner.png"/><strong>6:30 PM</strong><span>Dinner</span></div>
+              <div class="timeline__item scroll-animate slide-left"><img src="assets/imgs/details/ic_dinner.png"/><strong>6:00 PM</strong><span>Dinner</span></div>
               <div class="timeline__item scroll-animate slide-right"><img src="assets/imgs/details/ic_party.png"/><strong>7:00 PM</strong><span>Party</span></div>
 
             </div>

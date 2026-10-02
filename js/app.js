@@ -6,6 +6,7 @@ const app = document.querySelector("#app");
 const nav = document.querySelector(".main-nav");
 // const menuToggle = document.querySelector("#menuToggle");
 const musicToggle = document.querySelector("#musicToggle");
+const scrollToTopButton = document.querySelector("#scrollToTop");
 
 function showToast(message) {
   const toast = document.querySelector("#toast");
@@ -42,6 +43,12 @@ window.app = { navigateTo, playMusic, toggleMusic, showToast };
 // });
 
 musicToggle.addEventListener("click", toggleMusic);
+scrollToTopButton.addEventListener("click", () => {
+  app.scrollTo({ top: 0, behavior: "smooth" });
+});
+app.addEventListener("scroll", () => {
+  scrollToTopButton.classList.toggle("is-visible", app.scrollTop > 160);
+});
 
 initMusic();
 navigateTo("landing");

@@ -174,7 +174,46 @@
 .entourage-card ul { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .entourage-card li { color: var(--muted); font: 24px var(--font-monotype-corsiva); }
 .entourage-grid--sponsors .entourage-card { padding-block: 26px; }
-.entourage-grid--sponsors { max-width: 720px;}
+.entourage-grid--sponsors,
+.entourage-grid--secondary-sponsors { max-width: 720px;}
+.entourage-card--candle { grid-area: candle; }
+.entourage-card--cord { grid-area: cord; }
+.entourage-card--veil { grid-area: veil; }
+.entourage-grid--secondary-sponsors {
+  grid-template-areas: "candle cord" "veil veil";
+}
+.entourage-card--ring { grid-area: ring; }
+.entourage-card--bible { grid-area: bible; }
+.entourage-card--coin { grid-area: coin; }
+.entourage-card--flowers { grid-area: flowers; }
+.entourage-grid--treasures {
+  grid-template-areas: "ring ring" "bible coin" "flowers flowers";
+  max-width: 720px;
+}
+.entourage-group--secondary {
+  margin-top: 40px;
+}
+.entourage-group--secondary .entourage-card {
+  display: grid;
+  grid-template-rows: 60px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.entourage-group--secondary .entourage-card h4 {
+  margin: 0;
+}
+.entourage-group--secondary .entourage-card ul {
+  grid-gap: 0;
+}
+.entourage-card__icon {
+  width: 60px;
+}
+.entourage-card--cord .entourage-card__icon {
+  width: 80px;
+}
+.entourage-card--ring .entourage-card__icon {
+  width: 80px;
+}
 .timeline-section { position: relative; }
 .page-inner,
 .division-light-blue {
@@ -270,7 +309,8 @@
   .entourage-grid--separated { grid-template-columns: 1fr 1px 1fr; gap: 12px; }
   .entourage-separator { width: 1px; height: 90%; justify-self: center; margin: auto 0; }
   .entourage-couple { gap: 18px; }
-  .entourage-card { padding: 20px 14px; }
+  .entourage-card { padding: 0; }
+  .entourage-grid--sponsors .entourage-card { padding-block: 5px; }
   .location-item { padding: 24px; }
   .theme-section { padding: 34px 16px; }
   .theme-section::before,
@@ -305,5 +345,19 @@
   .division-light-blue::before,
   .division-light-blue::after {
     width: clamp(60px, 40vw, 100px);
+  }
+
+  .entourage-grid--treasures {
+    grid-gap: 20px;
+    grid-template-areas: "ring ring" "bible bible" "coin coin" "flowers flowers";
+  }
+
+  .entourage-grid--secondary-sponsors {
+    grid-gap: 20px;
+    grid-template-areas: "candle candle" "cord cord" "veil veil";
+  }
+  .entourage-grid--secondary-sponsors .entourage-card,
+  .entourage-grid--treasures .entourage-card {
+    padding: 0;
   }
 }

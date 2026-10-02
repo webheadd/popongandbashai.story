@@ -72,8 +72,7 @@ export function renderStory(app) {
         <div class="story-divider story-divider--last" aria-hidden="true"><span><img src="assets/imgs/logo.svg" alt=""></span></div>
 
         <section class="story-years" aria-labelledby="years-title">
-          <p class="story-chapter__number scroll-animate fade-up">Chapter 03</p>
-          <h2 class="scroll-animate fade-up" id="years-title">11 Years Strong</h2>
+          <h2 class="scroll-animate fade-up" id="years-title"><span class="font-seasons">11</span> Years Strong</h2>
           <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
           <p class="story-subtitle scroll-animate fade-up">A glimpse into our 11-year journey before we finally say 'I do.'</p>
           <div class="story-video">
@@ -83,6 +82,17 @@ export function renderStory(app) {
             </video>
           </div>
           <p class="story-watch scroll-animate fade-up">Watch Our Story</p>
+        </section>
+        <section class="story-chopper" aria-label="Chopper joins our family">
+          <video class="story-chopper__video scroll-animate" autoplay playsinline loop preload="metadata" aria-label="Video of Chopper">
+            <source src="assets/imgs/details/chopper.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+          <p class="story-chopper__caption scroll-animate font-monotype-corsiva">
+            Hand in hand (or paw in paw),<br>
+            We cannot wait to officially begin our journey as a family of three.<br>
+            A happily ever after with Chopper leading the way.
+          </p>
         </section>
       </div>
       <footer class="main-footer">
