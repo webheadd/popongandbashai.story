@@ -103,6 +103,7 @@ body {
   background: var(--cream);
   font-family: var(--sans);
   overflow: hidden;
+  padding-bottom: env(safe-area-inset-bottom, 20px)
 }
 
 button, input, select, textarea { font: inherit; }

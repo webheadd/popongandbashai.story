@@ -35,8 +35,6 @@ export function renderStory(app) {
           </figure>
         </section>
 
-        <div class="story-divider" aria-hidden="true"><span><img src="assets/imgs/logo.svg" alt=""></span></div>
-
         <section class="story-chapter story-chapter--proposal" aria-labelledby="proposal-title">
           <div class="story-chapter__text">
             <h2 class="scroll-animate fade-up uppercase" id="proposal-title">The Proposal</h2>
@@ -69,8 +67,6 @@ export function renderStory(app) {
           </div>
         </section>
 
-        <div class="story-divider story-divider--last" aria-hidden="true"><span><img src="assets/imgs/logo.svg" alt=""></span></div>
-
         <section class="story-years" aria-labelledby="years-title">
           <h2 class="scroll-animate fade-up" id="years-title"><span class="font-seasons">11</span> Years Strong</h2>
           <div class="story-ornament story-ornament--rule scroll-animate fade-up" aria-hidden="true"><img src="assets/imgs/logo.svg" alt=""></div>
@@ -83,6 +79,7 @@ export function renderStory(app) {
           </div>
           <p class="story-watch scroll-animate fade-up">Watch Our Story</p>
         </section>
+        <img class="emblem" src="assets/imgs/emblem.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
         <section class="story-chopper" aria-label="Chopper joins our family">
           <video class="story-chopper__video scroll-animate" autoplay playsinline loop preload="metadata" aria-label="Video of Chopper">
             <source src="assets/imgs/details/chopper.mp4" type="video/mp4">

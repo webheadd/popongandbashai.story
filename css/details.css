@@ -296,10 +296,15 @@
 .timeline__item img { width: auto; height: 80px; }
 .timeline__item strong { color: var(--green-dark); font: 600 20px var(--serif); }
 .timeline__item span { color: #000; font: 600 20px var(--serif); }
+
+.emblem {
+  width: 70%;
+  max-width: 200px;
+  margin: 80px auto 0 auto;
+  display: block;
+}
 @media (max-width: 700px) {
-  /* .details-page .page-inner { padding: 0 18px; } */
-  /* .details-banner { margin-bottom: 54px; } */
-  /* .details-section { margin-bottom: 56px; } */
+  .emblem { max-width: 100px; }
   .location-grid,
   .attire-panel,
   .entourage-couple,

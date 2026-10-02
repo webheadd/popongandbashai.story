@@ -93,7 +93,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
             </article>
           </div>
         </section>
-
+        <img class="emblem" src="assets/imgs/emblem.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
         <section class="details-section entourage-section" aria-labelledby="entourage-title">
           <header class="details-section__header">
             <h2 id="entourage-title" class="font-new-icon scroll-animate slide-left">The Entourage</h2>
