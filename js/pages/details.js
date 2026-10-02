@@ -127,6 +127,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
             <p class="font-monotype-corsiva">To stand as principal witnesses to our vows.</p>
             <div class="entourage-grid entourage-grid--sponsors">
               <article class="entourage-card">
+              <h4 class="scroll-animate">Ninang</h4>
                 <ul>
                   <li>Mrs. Helie Cervano</li>
                   <li>Mrs. Mary Ann Canare</li>
@@ -135,18 +136,19 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
                   <li>Mrs. Carmencita Doctolero</li>
                   <li>Mrs. Ruby Reyes</li>
                   <li>Mrs. Vilma Sta Maria</li>
+                  <li>Mrs. Ana Maria De Castro</li>
+                  <li>Mrs. Annabelle Estrella</li>
                 </ul>
               </article>
               <article class="entourage-card">
+              <h4 class="scroll-animate">Ninong</h4>
                 <ul>
                   <li>Mr. William Cervano</li>
                   <li>Engr. Molave Art Canare</li>
-                  <li>Vice Mayor Rommel Del Rosario</li>
+                  <li>Hon. Ramil Del Rosario</li>
                   <li>Mr. Roseller Santos</li>
                   <li>Mr. Joey Doctolero</li>
                   <li>Mr. Christopher Reyes</li>
-                  <li>Mrs. Ana Maria De Castro</li>
-                  <li>Mrs. Annabelle Estrella</li>
                 </ul>
               </article>
             </div>
