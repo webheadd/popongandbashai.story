@@ -339,7 +339,7 @@
   }
   @supports (-webkit-touch-callout: none) {
     .main-footer {
-      padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px));
+      padding-bottom: calc(130px + env(safe-area-inset-bottom, 0px));
     }
   }
   .main-footer__button {
