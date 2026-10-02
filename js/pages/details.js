@@ -135,6 +135,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
                   <li>Mrs. Maricon Santos</li>
                   <li>Mrs. Carmencita Doctolero</li>
                   <li>Mrs. Ruby Reyes</li>
+                  <li>Mrs. Imelda Zamora</li>
                   <li>Mrs. Vilma Sta Maria</li>
                   <li>Mrs. Ana Maria De Castro</li>
                   <li>Mrs. Annabelle Estrella</li>
@@ -149,6 +150,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
                   <li>Mr. Roseller Santos</li>
                   <li>Mr. Joey Doctolero</li>
                   <li>Mr. Christopher Reyes</li>
+                  <li>Mr. Galileo Zamora</li>
                 </ul>
               </article>
             </div>
