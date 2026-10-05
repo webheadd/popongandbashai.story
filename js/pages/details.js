@@ -77,8 +77,8 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
               <img class="attire-panel__image" src="assets/imgs/details/gentlemen.png" alt="Gentlemen's wedding attire inspiration">
               <div class="attire-panel__copy">
                 <h3 id="attire-title" class="font-new-icon scroll-animate slide-right">For the Gentlemen</h3>
-                <p class="font-seasons uppercase scroll-animate">Gentlemen are requested to wear a formal suit in Black, Gray, light Gray, or Brown, paired with dress shoes.</p>
-                <p class="font-monotype-corsiva scroll-animate">To help bring our wedding palette to life, we warmly encourage the gentlemen to incorporate a pastel-colored dress shirt or necktie into their attire!</p>
+                <p class="font-seasons uppercase scroll-animate">Gentlemen are requested to wear a formal suit in Black, Gray, light Gray, or Dark Brown, paired with dress shoes.</p>
+                <p class="font-monotype-corsiva scroll-animate">To help bring our wedding palette to life, we warmly encourage the gentlemen to incorporate a pastel-colored dress shirt OR a pastel necktie (paired with a classic white dress shirt).</p>
                 <img class="details-separator--gentlemen" src="assets/imgs/design/separator_1.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
               </div>
             </article>
@@ -136,6 +136,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
                   <li>Mrs. Carmencita Doctolero</li>
                   <li>Mrs. Ruby Reyes</li>
                   <li>Mrs. Imelda Zamora</li>
+                  <li>Mrs. Ann Aposaga</li>
                   <li>Mrs. Vilma Sta Maria</li>
                   <li>Mrs. Ana Maria De Castro</li>
                   <li>Mrs. Annabelle Estrella</li>
@@ -151,6 +152,7 @@ Annabelle Events Place, a 5-minute drive from the church located at Purok 7, Jal
                   <li>Mr. Joey Doctolero</li>
                   <li>Mr. Christopher Reyes</li>
                   <li>Mr. Galileo Zamora</li>
+                  <li>Mr. Radie Aposaga</li>
                 </ul>
               </article>
             </div>
